@@ -17,11 +17,11 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <a href="/" class="{{ request()->('/') ? bg-gray-900 text-white': 'text-gray-300 hover:bg-gray-700 hover:text-white'}} rounded-md bg-gray-900 px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-              <a href="/about" class="{{ request()->('/') ? bg-gray-900 text-white': 'text-gray-300 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium ">About</a>
-              <a href="/contact" class="{{ request()->('/') ? bg-gray-900 text-white': 'text-gray-300 hover:bg-gray-700 hover:text-white'}} rounded-md px-3 py-2 text-sm font-medium ">Contact</a>
-            </div>
+            <x-nav-link href="/" : active="request()->('/')">Home</x-nav-link>
+            <x-nav-link href="/jobs" : active="request()->('jobs')">Jobs</x-nav-link>
+            <x-nav-link href="/contact" : active="request()->('contact')" type="button">Contact</x-nav-link>
           </div>
+        </div>
         </div>
         <div class="hidden md:block">
           <div class="ml-4 flex items-center md:ml-6">
@@ -99,7 +99,7 @@
   </header>
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      {{ $slot. }}
+      
     </div>
   </main>
 </div>
