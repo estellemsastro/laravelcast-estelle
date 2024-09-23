@@ -1,7 +1,5 @@
 <x-layout>
     <x-slot:heading>
-        home page
+       Job listings
     </x-slot:heading>
-    
-<h1>hello from the Home Page.</h1>
 </x-layout>
