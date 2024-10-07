@@ -1,6 +1,11 @@
-<h2 class ="font-bold text-lg">{{ $Job['title']  }} </h2>
+<x-layout>
+    <x-slot:heading>
+        Job
+    </x-slot:heading>
 
-<p>
-    This job pays {{ $jobs['salary'] }} per year.
-</p>
-</x-layout> 
+    <h2 class="font-bold text-lg">{{ $job['title'] }}</h2>
+
+    <p>
+        This job pays {{ $job['salary'] }} per year.
+    </p>
+</x-layout>
