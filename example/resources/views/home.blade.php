@@ -1,5 +1,5 @@
 <x-layout>
     <x-slot:heading>
-       Job listings
+        Home Page
     </x-slot:heading>
 </x-layout>
